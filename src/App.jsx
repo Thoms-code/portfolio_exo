@@ -1,13 +1,34 @@
-import React, { Fragment } from 'react';
+import React, { Fragment , useState , useEffect } from 'react';
+import Header from './components/Header';
+import FirstSection from './components/home/FirstSection';
+import Loading from "./components/Loading"
 
 const App = () => {
 
+    const [loading , setLoading] = useState(false);
 
-    return (
-        <Fragment>
-            <h1>HELLO</h1>
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(true)
+        }, 2000);
+    })
+
+    if (loading === true) {
+        return (
+            <Fragment>
+            <Header />
+            <main>
+                <FirstSection />
+            </main>
         </Fragment>
     )
+    } else {
+        return (
+            <Fragment>
+                <Loading />
+            </Fragment>
+        )
+    }
 }
 
 
