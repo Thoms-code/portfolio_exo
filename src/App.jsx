@@ -1,7 +1,6 @@
 import React, { Fragment , useState , useEffect } from 'react';
 import Header from './components/Header';
-import FirstSection from './components/home/FirstSection';
-import Loading from "./components/Loading"
+import Loading from "./components/misc/Loading"
 
 const App = () => {
 
@@ -10,16 +9,13 @@ const App = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(true)
-        }, 2000);
+        }, 1000);
     })
 
     if (loading === true) {
         return (
-            <Fragment>
+        <Fragment>
             <Header />
-            <main>
-                <FirstSection />
-            </main>
         </Fragment>
     )
     } else {

@@ -4,11 +4,14 @@ const Header = () => {
 
 
     return (
-        <header id="header">
-            <figure class="logo_portfolio"></figure>
+        <header id="header_home">
             <section>
-                <p id="lang_en">EN.</p>
-                <p id="lang_fr">FR.</p>
+                <div className="home_title_header">
+                    <p>THOMAS C <span>.</span></p>
+                </div>
+                <div className="home_lang">
+                    <p>EN.<span>FR.</span></p>
+                </div>
             </section>
         </header>
     )

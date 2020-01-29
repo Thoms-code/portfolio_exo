@@ -1,0 +1,41 @@
+/* HomePage style */
+
+/* HomePage Header */
+
+#header_home {
+    width: 100%;
+    height: 50px;
+    background-color: $white;
+    font-family: "Gilroy";
+    section {
+        display: flex;
+        .home_title_header {
+            cursor: pointer;
+            justify-content: start;
+            p {
+                display: inline-block;
+                margin-left: 4vw;
+                span {
+                    position: relative;
+                    bottom: 8px;
+                }
+            }
+        }
+        .home_lang {
+            cursor: pointer;
+            color: $grey;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: 4vw;
+            font-size: 12px;
+            span {
+                color: $black;
+                margin-left: 2px;
+            }
+        }
+    }
+}
+
+/* HomePage Main */
+
