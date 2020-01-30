@@ -107,9 +107,14 @@
                 margin-left: 0;
                 margin-bottom: 0;
                 background-image: url("../../../images/home/visuel_project-retina.jpg");
-                background-attachment: fixed;
+                background-attachment: scroll;
                 background-position: center;
                 background-size: cover;
+            }
+            figcaption {
+                font-family: $libre;
+                text-align: center;
+                font-size: 2vw;
             }
         }
     }
