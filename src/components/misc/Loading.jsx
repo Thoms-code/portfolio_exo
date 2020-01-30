@@ -2,6 +2,7 @@ import React from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import red from '@material-ui/core/colors/red';
 
+
 const Loading = () => {
 
     const primary = red[50];

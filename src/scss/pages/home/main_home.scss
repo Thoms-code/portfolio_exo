@@ -1,0 +1,47 @@
+/* HomePage Menu */
+#main_home_big {
+    width: 100%;
+    overflow: hidden;
+    #main_home {
+        width: 50%;
+        height: 90vh;
+        margin: 0    auto auto 3%;
+        background-color: $red;
+        .home_title {
+            padding-top: 27vh;
+            padding-left: 45%;
+            padding-right: auto;
+            h1 {
+                font-family: "Gilroy";
+                font-size: 10vw;
+                color: $black;
+                margin: 0;
+                line-height: 85%;
+                span {
+                    color: $red;
+                }
+            }
+            #home_title_portfolio {
+                display: none
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    #main_home_big {
+        height: 70vh;
+        #main_home {
+            .home_title {
+                padding-top: 25vh !important;
+                h1 {
+                    display: none;
+                }
+                #home_title_portfolio {
+                    font-size: 16.5vw !important;
+                    display: block !important;
+                    margin-left: 2vw;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,9 @@
 import React, { Fragment , useState , useEffect } from 'react';
 import Header from './components/Header';
-import Loading from "./components/misc/Loading"
+import Loading from "./components/misc/Loading";
+import MainHome from './components/home/MainHome';
+import HomeFirstBanner from './components/home/HomeFirstBanner';
+import HomeDigitalSection from './components/home/HomeDigitalSection';
 
 const App = () => {
 
@@ -16,6 +19,9 @@ const App = () => {
         return (
         <Fragment>
             <Header />
+            <MainHome />
+            <HomeFirstBanner />
+            <HomeDigitalSection />
         </Fragment>
     )
     } else {
