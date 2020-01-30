@@ -1,0 +1,12 @@
+/* home creative section style */
+
+#home_creative_section {
+    width: 94%;
+    display: flex;
+    .home_creative_left {
+        flex: 5;
+    }
+    .home_creative_right {
+        flex: 6;
+    }
+}

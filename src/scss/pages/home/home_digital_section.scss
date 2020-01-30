@@ -1,7 +1,132 @@
 /* home digital section style*/
 
 #home_digital_section {
+    overflow: hidden;
+    display: flex;
     margin: 0 auto;
     width: 94%;
-    
+    .home_digital_text {
+        flex: 4;
+        h1 {
+            font-family: $girlroybold;
+            color: $red;
+            font-size: 8vw;
+            line-height: 90%;
+            margin-left: 5vw;
+            margin-right: auto;
+            margin-bottom: 2vh;
+        }
+        h3 {
+            font-family: $girlroybold;
+            margin-left: 5vw;
+            font-size: 2vw;
+            span {
+                font-family: $libre;
+            }
+            .dot {
+                color: $red;
+            }
+        }
+        p {
+            margin-left: 5vw;
+            width: 50%;
+            font-family: $girlroybold;
+            color: $textgrey;
+            margin-bottom: 3.5vh;
+        }
+        .home_digital_text_valeur {
+            margin-left: 5vw;
+            font-family: $libre;
+            color: $black;
+            font-size: 1.5vw;
+        }
+    }
+    .home_digital_text-mobile , .home_digital_category-mobile{
+        display: none;
+    }
+    .home_digital_category {
+        flex: 5;
+        padding-bottom: 10vh;
+        section {
+            background-color: $black;
+            margin-left: auto;
+            width: 100%;
+            height: 70vh;
+            margin-top: 25vh;
+            div {
+                display: flex;
+                flex-flow: column wrap;
+                margin: 2vh auto;
+                width: 90%;
+                height: 90%;
+                article {
+                    flex: 5;
+                    width: 50%;
+                    h1 {
+                        color: $white;
+                        font-size: 1vw;
+                    }
+                    h4 {
+                        color: $textgrey
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    #home_digital_section {
+        display: block;
+        .home_digital_text , .home_digital_category {
+            display: none;
+        }
+        .home_digital_text-mobile {
+            display: block !important;
+            width: 100%;
+            h1 {
+                color: $red;
+                font-family: $girlroybold;
+                text-align: center;
+                font-size: 12vw;
+                margin: 2vh auto
+            }
+            h3 {
+                width: 100%;
+                text-align: center !important;
+                span {
+                    font-family: $libre;
+                }
+            }
+            p {
+                text-align: center;
+            }
+            .home_digital_text_valeur-mobile {
+                display: block;
+                text-align: center !important;
+                font-family: $libre;
+                color: $black;
+            }
+        }
+        .home_digital_category-mobile {
+            display: block;
+            width: 100%;
+            background-color: $black;
+            padding-bottom: 1vh;
+            padding-top: 1vh;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            h1 {
+                font-size: 5vw;
+                margin-bottom: 1vh;
+                margin-top: 1vh;
+                color: $white;
+                margin-left: 2vw;
+            }
+            h4 {
+                color: $textgrey;
+                line-height: 97%;
+                margin-left: 3vw;
+            }
+        }
+    }
 }

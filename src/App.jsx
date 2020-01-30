@@ -4,6 +4,7 @@ import Loading from "./components/misc/Loading";
 import MainHome from './components/home/MainHome';
 import HomeFirstBanner from './components/home/HomeFirstBanner';
 import HomeDigitalSection from './components/home/HomeDigitalSection';
+// import HomeCreativeSection from './components/home/HomeCreativeSection';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
             <MainHome />
             <HomeFirstBanner />
             <HomeDigitalSection />
+            {/* <HomeCreativeSection /> */}
         </Fragment>
     )
     } else {

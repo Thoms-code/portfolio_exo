@@ -5,6 +5,10 @@
 @import "./pages/home/home.scss";
 @import "./misc/loading.scss";
 
+/* import google font */
+
+/* "font-family: 'Libre Baskerville', serif;" */
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&display=swap');
 /* import personalized font */
 @font-face {
     font-family: "Gilroy";
