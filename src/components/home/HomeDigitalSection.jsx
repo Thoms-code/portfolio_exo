@@ -69,7 +69,7 @@ const HomeDigitalSection = () => {
                             <h1>Développement</h1>
                             <h4>Dév. front & back / Magento, Wordpress</h4>
                             <h4>Interaction design / Symfony, Laravel</h4>
-                        </article>
+                         </article>
                         <article>
                             <h1>Social Media & Webmarketing</h1>
                             <h4>Stratégie Social Media / UReporting, live event</h4>

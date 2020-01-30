@@ -1,12 +1,116 @@
 /* home creative section style */
+.home_creative_left-mobile , .home_creative_right-mobile {
+    display: none;
+}
 
 #home_creative_section {
     width: 94%;
     display: flex;
+    margin: 2vh auto;
     .home_creative_left {
-        flex: 5;
+        flex: 4;
+        h1 {
+            color: $black;
+            font-size: 8vw;
+            font-family: $girlroybold;
+            line-height: 90%;
+            margin-left: 5vw;
+            margin-right: auto;
+            margin-bottom: 20vh;
+        }
+        figure {
+            width: 100%;
+            height: 37vh;
+            margin-bottom: 0;
+            background-image: url("../../../images/home/visuel_project-retina.jpg");
+            background-attachment: fixed;
+            background-position: right;
+            background-size: contain;
+        }
+        figcaption {
+            color: $black;
+            font-family: $girlroybold;
+            margin-left: 27.1vw;
+            margin-top: 0.5vh;
+        }
     }
     .home_creative_right {
-        flex: 6;
+        flex: 5;
+        h1 {
+            font-size: 2vw;
+            font-family: $girlroybold;
+            margin-top: 28vh;
+            margin-left: 8vw;
+            span {
+                font-family: $libre;
+            }
+            .dot {
+                color: $red;
+            }
+        }
+        p {
+            width: 45%;
+            font-family: $girlroybold;
+            color: $textgrey;
+            margin-top: 24vh;
+            margin-left: 8vw;
+            margin-bottom: 5vh;
+        }
+        .home_creative_right_link {
+            font-family: $libre;
+            color: $black;
+            font-size: 1.2vw;
+            margin-left: 8vw;
+        }
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .home_creative_right , .home_creative_left {
+        display: none;
+    }
+    #home_creative_section {
+        display: block;
+        padding-bottom: 5vh;
+        .home_creative_left-mobile {
+            display: block;
+            width: 100% !important;
+            h1 {
+                font-family: $girlroybold;
+                text-align: center;
+                font-size: 12vw;
+                margin: 2vw auto;
+            }
+            h2 {
+                text-align: center;
+                span {
+                    font-family: $libre;
+                }
+            }
+            p {
+                text-align: center;
+            }
+            .home_creative_right_link-mobile {
+                display: block;
+                text-align: center;
+                font-family: $libre;
+                color: $black;
+            }
+        }
+        .home_creative_right-mobile {
+            display: block;
+            width: 100%;
+            figure {
+                width: 100%;
+                height: 27vh;
+                margin-left: 0;
+                margin-bottom: 0;
+                background-image: url("../../../images/home/visuel_project-retina.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+        }
     }
 }
