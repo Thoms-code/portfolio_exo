@@ -1,0 +1,51 @@
+/* About First Section Style */
+
+#about_home_big {
+    width: 100%;
+    overflow: hidden;
+    #about_home {
+        width: 75%;
+        height: 90vh;
+        margin: 0 3% auto auto;
+        background-color: $yellow;
+        .about_title {
+            position: relative;
+            right: 7vw;
+            padding-top: 27vh;
+            h1 {
+                font-family: "Gilroy";
+                font-size: 10vw;
+                color: $black;
+                margin: 0;
+                line-height: 85%;
+                span {
+                    color: $red;
+                }
+            }
+            #about_title-mobile {
+                display: none
+            }
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    #about_home_big {
+        height: 30vh;
+        #about_home {
+            width: 100%;
+            .about_title {
+                position: initial;
+                padding-top: 10vh;
+                h1 {
+                    text-align: center;
+                    display: none;
+                }
+                #about_title-mobile {
+                    font-size: 16.5vw !important;
+                    display: block !important;
+                    margin-left: 2vw;
+                }
+            }
+        }
+    }
+}

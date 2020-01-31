@@ -1,0 +1,78 @@
+/* About Strong Section Style */
+
+#about_strong_section {
+    display: flex;
+    width: 94%;
+    margin: 5vh auto;
+    .about_strong_left {
+        flex: 5;
+        h2 {
+            margin-left: 7vw;
+            font-family: $girlroybold;
+            font-size: 3.5vw;
+            span {
+                font-family: $libre;
+            }
+            .dot {
+                color: $yellow;
+            }
+        }
+    }
+    .about_strong_middle {
+        flex: 3;
+        p {
+            margin-top: 10vh;
+            color: $textgrey;
+            font-family: $girlroybold;
+            width: 70%;
+        }
+    }
+    .about_strong_right {
+        flex: 3;
+        p {
+            margin-top: 10vh;
+            color: $textgrey;
+            font-family: $girlroybold;
+            width: 80%;
+        }
+    }
+}
+
+.about_strong_left-mobile , .about_strong_middle-mobile , .about_strong_right-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    .about_strong_left {
+        display: none;
+    }
+
+    #about_strong_section {
+        display: block;
+        .about_strong_left-mobile {
+            display: block;
+            h2 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                text-align: center;
+                font-family: $girlroybold;
+                span {
+                    font-family: $libre;
+                }
+                .dot {
+                    color: $yellow;
+                }
+            }
+        }
+        .about_strong_middle, .about_strong_right {
+            display: block;
+            p {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2vh;
+            }
+        }
+    }
+}

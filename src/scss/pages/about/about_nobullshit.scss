@@ -1,0 +1,60 @@
+/* About NoBullshit Style */
+
+#about_nobullshit {
+    display: flex;
+    width: 94%;
+    margin: 2vh auto;
+    article {
+        margin-left: 20vw;
+        width: 50%;
+        h2 {
+            display: inline;
+            font-size: 3.5vw;
+            font-family: $girlroybold;
+            span {
+                font-family: $libre;
+            }
+        }
+        h4 {
+            font-family: $libre;
+            font-size: 1.2vw;
+            width: 60%;
+        }
+        p {
+            font-family: $girlroybold;
+            color: $textgrey;
+            width: 60%;
+        }
+    }
+    figure {
+        margin: 0;
+        background-image: url("../../../images/about/nobullshit_large.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50vw;
+        height: 55vh;
+    }
+}
+
+#about_nobullshit-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    .about_nobullshit-desktop , .about_nobullshit_figure-desktop {
+        display: none;
+    } 
+    #about_nobullshit-mobile {
+        display: block;
+        figure {
+            width: 100%;
+            height: 35vh;
+        }
+        h2 {
+            font-family: $girlroybold;
+            span {
+                font-family: $libre;
+            }
+        }
+    }
+}

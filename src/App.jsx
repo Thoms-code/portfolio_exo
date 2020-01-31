@@ -1,5 +1,5 @@
 import React, { Fragment , useState , useEffect } from 'react';
-import Header from './components/Header';
+import Header from './components/home/Header';
 import Loading from "./components/misc/Loading";
 import MainHome from './components/home/MainHome';
 import HomeFirstBanner from './components/home/HomeFirstBanner';
@@ -14,7 +14,7 @@ const App = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(true)
-        }, 1000);
+        }, 3000);
     })
 
     if (loading === true) {

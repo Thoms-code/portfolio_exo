@@ -9,13 +9,13 @@ const HomeDigitalSection = () => {
                 <h1>DIG<br/>ITAL.</h1>
                 <h3> Une vision <br/><span>globale</span><br/>de votre<br/>stratégie<br/>digitale<span className="dot">.</span></h3>
                 <p>Élément clé de votre transformation, la stratégie digitale nécessite une attention toute particulière. C’est cet accompagnement que l’ensemble de l’équipe vous propose tout au long du projet. À base de workshops, d’échanges et de brainstormings, nous faisons évoluer votre idée initiale vers une solution digitale ambitieuse.</p>
-                <Link to="/nosvaleurs" className="home_digital_text_valeur">Nos Valeurs</Link>
+                <Link to="/about" className="home_digital_text_valeur">Nos Valeurs</Link>
             </section>
             <section className="home_digital_text-mobile">
                 <h1>DIGITAL.</h1>
                 <h3> Une vision <span>globale</span> de votre stratégie digitale<span className="dot">.</span></h3>
                 <p>Élément clé de votre transformation, la stratégie digitale nécessite une attention toute particulière. C’est cet accompagnement que l’ensemble de l’équipe vous propose tout au long du projet. À base de workshops, d’échanges et de brainstormings, nous faisons évoluer votre idée initiale vers une solution digitale ambitieuse.</p>
-                <Link to="/nosvaleurs" className="home_digital_text_valeur-mobile">Nos Valeurs</Link>
+                <Link to="/about" className="home_digital_text_valeur-mobile">Nos Valeurs</Link>
             </section>
             <section className="home_digital_category">
                 <section>
